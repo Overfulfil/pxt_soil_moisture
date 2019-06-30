@@ -1,0 +1,13 @@
+{
+    "CJMCU8118|block": "自訂",
+    "CJMCU8118.CJMCUStart|block": "啟動 CJMCU8118",
+    "CJMCU8118.CJMCUTHIDno|block": "讀取 CJMCU8118 TH IDno",
+    "CJMCU8118.CJMCUTHConfig|block": "讀取 CJMCU8118 TH Config",
+    "CJMCU8118.CJMCUTHgetTemp|block": "讀取 CJMCU8118 TH get Temperature",
+    "CJMCU8118.CJMCUTHgetHumid|block": "讀取 CJMCU8118 TH get Humidity",
+    "CJMCU8118.CJMCUGasIDno|block": "讀取 CJMCU8118 Gas IDno",
+    "CJMCU8118.CJMCUGasAppStart|block": "啟動 CJMCU8118 Gas App Start",
+    "CJMCU8118.CJMCUGasStatus|block": "讀取 CJMCU8118 Gas Status",
+    "CJMCU8118.CJMCUGasErrID|block": "讀取 CJMCU8118 Gas ErrorID",
+    "CJMCU8118.CJMCUGasDrvMode|block": "啟動 CJMCU8118 Gas DrvMode1",
+}
