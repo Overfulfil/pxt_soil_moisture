@@ -45,9 +45,9 @@ namespace indenvsensor {
 /*	    if (Math.floor(temp / 16) !=9) {
 		    return false
 	    } */
-	    if (temp %2 !=0) {
+/*	    if (temp %2 !=0) {
 		    return false
-	    } 
+	    } */
 	    basic.pause(200)
 	    /* CJMCU-8118 CCS811 set driving mod 1 addr 0x5A register 0x01 set 0x0110 */	    
 /*	    pins.i2cWriteNumber(90,272,NumberFormat.UInt16BE,false)
