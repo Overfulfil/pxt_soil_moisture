@@ -44,7 +44,7 @@ namespace indenvsensor {
 /*	    if (Math.floor(temp / 16) !=9) {
 		    return false
 	    } */
-	    if (temp % 2 !=0) {
+	    if (temp !=0) {
 		    return false
 	    } 
 	    basic.pause(200)
