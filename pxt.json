@@ -1,0 +1,15 @@
+{
+    "name": "IndEnvSensor",
+    "version": "0.0.1",
+    "description": "這是自製的 micro:bit Indoor Environment Sensor 積木",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/zh/indenvsensorblock-strings.json"
+    ],
+    "public": true
+}
