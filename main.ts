@@ -121,31 +121,4 @@ namespace indenvsensor {
 	    return GasStatus
     }
 
-    /* CJMCU-8118 CCS811 Gas sensor addr 0x5A register 0xE0 return 1 byte */
-    //% blockId="indenvGasErrID" block="IndEnv Gas ErrorID"
-    //% blockGap=2 weight=72
-    export function indenvGasErrID(): number {
-	    pins.setPull(DigitalPin.P19, PinPullMode.PullUp)
-	    pins.setPull(DigitalPin.P20, PinPullMode.PullUp)
-	    basic.pause(200)
-	    pins.i2cWriteNumber(90,224,NumberFormat.UInt8LE,false)
-	    basic.pause(200)
-	    let GasErrID = pins.i2cReadNumber(90, NumberFormat.UInt8LE, false)
-	    basic.pause(200)
-	    return GasErrID
-    }
-
-    /* CJMCU-8118 CCS811 Gas sensor addr 0x5A register 0x01 */
-    //% blockId="indenvGasDrvMode" block="IndEnv Gas DrvMode1"
-    //% blockGap=2 weight=71
-    export function indenvGasDrvMode() {
-	    pins.setPull(DigitalPin.P19, PinPullMode.PullUp)
-	    pins.setPull(DigitalPin.P20, PinPullMode.PullUp)
-	    basic.pause(200)
-	    pins.i2cWriteNumber(90,1,NumberFormat.UInt8LE,false)
-	    basic.pause(200)
-	    pins.i2cWriteNumber(90,16,NumberFormat.UInt8LE,false)
-	    basic.pause(200)
-    }
-
 }
