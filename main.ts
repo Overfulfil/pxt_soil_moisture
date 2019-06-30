@@ -30,7 +30,7 @@ namespace indenvsensor {
 	    /* CJMCU-8118 CCS811 addr 0x5A reg 0x20 Read Device ID = 0x81 */
 	    pins.i2cWriteNumber(90,32,NumberFormat.UInt8LE,false)
 	    basic.pause(200)
-	    if (pins.i2cReadNumber(90, NumberFormat.UInt8LE, false) != 128) {
+	    if (pins.i2cReadNumber(90, NumberFormat.UInt8LE, false) != 129) {
 		    return false
 	    }
 	    basic.pause(200)
