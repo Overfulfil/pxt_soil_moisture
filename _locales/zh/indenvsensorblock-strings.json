@@ -6,6 +6,4 @@
     "indenvsensor.indenvGasIDno|block": "讀取 IndEnv  Gas IDno",
     "indenvsensor.indenvGasAppStart|block": "啟動 IndEnv Gas App Start",
     "indenvsensor.indenvGasStatus|block": "讀取 IndEnv Gas Status",
-    "indenvsensor.indenvGasErrID|block": "讀取 IndEnv Gas ErrorID",
-    "indenvsensor.indenvGasDrvMode|block": "啟動 IndEnv Gas DrvMode1",
 }
