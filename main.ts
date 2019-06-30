@@ -34,20 +34,17 @@ namespace indenvsensor {
 		    return false
 	    }
 	    basic.pause(200)
-	    /* CJMCU-8118 AppStart CCS811 Gas sensor addr 0x5A register 0xF4 */
+	    /* CJMCU-8118 AppStart CCS811 addr 0x5A register 0xF4 */
 	    pins.i2cWriteNumber(90,244,NumberFormat.UInt8LE,false)
 	    basic.pause(200)
     	    /* CJMCU-8118 CCS811 read status addr 0x5A register 0x00 */
 	    pins.i2cWriteNumber(90,0,NumberFormat.UInt8LE,false)
 	    basic.pause(200)
-	    if (Math.idiv(pins.i2cReadNumber(90, NumberFormat.UInt8LE, false), 16) !=9) {
+	    Let temp = pins.i2cReadNumber(90, NumberFormat.UInt8LE, false)
+	    if (Math.idiv(temp, 16) !=9) {
 		    return false
 	    }
-	    basic.pause(200)
-    	    /* CJMCU-8118 CCS811 read ErrorID addr 0x5A register 0xE0 return 1 byte */	    
-	    pins.i2cWriteNumber(90,224,NumberFormat.UInt8LE,false)
-	    basic.pause(200)
-	    if (pins.i2cReadNumber(90, NumberFormat.UInt8LE, false) !=0) {
+	    if (temp % 2 !=0) {
 		    return false
 	    }
 	    basic.pause(200)
