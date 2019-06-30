@@ -4,7 +4,7 @@ namespace indenvsensor {
 
     /* CJMCU-8118 HDC1080 Temp&Humidity sensor addr 0x40 */
     /* CJMCU-8118 CCS811 Gas sensor addr 0x5A */
-    //% blockId="indenvStart" block="Ind Env Sensor Start"
+    //% blockId="indenvStart" block="IndEnv Sensor Start"
     //% blockGap=2 weight=80
     export function indenvStart(): boolean {
 	    pins.setPull(DigitalPin.P19, PinPullMode.PullUp)
