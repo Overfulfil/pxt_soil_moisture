@@ -35,11 +35,11 @@ namespace indenvsensor {
 	    }
 	    basic.pause(200)
 	    /* CJMCU-8118 AppStart CCS811 addr 0x5A register 0xF4 */
-	    pins.i2cWriteNumber(90,244,NumberFormat.UInt8LE,false)
-	    basic.pause(200)
+/*	    pins.i2cWriteNumber(90,244,NumberFormat.UInt8LE,false)
+	    basic.pause(200) */
     	    /* CJMCU-8118 CCS811 read status addr 0x5A register 0x00 */
-	    pins.i2cWriteNumber(90,0,NumberFormat.UInt8LE,false)
-	    basic.pause(200)
+/*	    pins.i2cWriteNumber(90,0,NumberFormat.UInt8LE,false)
+	    basic.pause(200) */
 /*	    Let temp = pins.i2cReadNumber(90, NumberFormat.UInt8LE, false)
 	    if (Math.idiv(temp, 16) !=9) {
 		    return false
