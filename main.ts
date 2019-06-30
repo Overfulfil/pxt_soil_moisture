@@ -37,19 +37,17 @@ namespace indenvsensor {
 	    /* CJMCU-8118 AppStart CCS811 addr 0x5A register 0xF4 */
 	    pins.i2cWriteNumber(90,244,NumberFormat.UInt8LE,false)
 	    basic.pause(200)
-    	    /* CJMCU-8118 CCS811 read status addr 0x5A register 0x00 */
+	    /* CJMCU-8118 CCS811 read status addr 0x5A register 0x00 */
 	    pins.i2cWriteNumber(90,0,NumberFormat.UInt8LE,false)
 	    basic.pause(200)
 	    Let temp = pins.i2cReadNumber(90, NumberFormat.UInt8LE, false)
 	    basic.pause(200)
-
-	    basic.pause(200)
-	    /* CJMCU-8118 CCS811 set driving mod 1 addr 0x5A register 0x01 set 0x0110 */	    
-/*	    pins.i2cWriteNumber(90,272,NumberFormat.UInt16BE,false)
-	    basic.pause(200) */
+	    /* CJMCU-8118 CCS811 set driving mod 1 addr 0x5A register 0x01 set 0x0110 */
+	    /* pins.i2cWriteNumber(90,272,NumberFormat.UInt16BE,false) */
+	    /* basic.pause(200) */
 	    return true
     }
-
+	
     /* CJMCU-8118 HDC1080 Temp&Humidity sensor addr 0x40 register 0x00 return 2 bytes */
     //% blockId="indenvgetTemp" block="IndEnv get Temperature"
     //% blockGap=2 weight=77
