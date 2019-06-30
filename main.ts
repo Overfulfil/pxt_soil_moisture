@@ -41,9 +41,9 @@ namespace indenvsensor {
 	    pins.i2cWriteNumber(90,0,NumberFormat.UInt8LE,false)
 	    basic.pause(200)
 	    Let temp = pins.i2cReadNumber(90, NumberFormat.UInt8LE, false)
-	    if (Math.floor(temp / 16) !=9) {
+/*	    if (Math.floor(temp / 16) !=9) {
 		    return false
-	    }
+	    } */
 	    if (temp % 2 !=0) {
 		    return false
 	    } 
