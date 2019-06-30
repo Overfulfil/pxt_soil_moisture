@@ -44,6 +44,13 @@ namespace indenvsensor {
 		    return false
 	    }
 	    basic.pause(200)
+	    pins.i2cWriteNumber(90,0,NumberFormat.UInt8LE,false)
+	    basic.pause(200)
+	    if (Math.idiv(pins.i2cReadNumber(90, NumberFormat.UInt8LE, false), 16) !=9) {
+		    return false
+	    }
+	    basic.pause(200)
+
 	    return true
     }
 	
