@@ -135,8 +135,8 @@ namespace indenvsensor {
 	    return pins.i2cReadNumber(90, NumberFormat.UInt16BE, false)
     }
 
-    /* CJMCU-8118 CCS811 read eCO2 addr 0x5A register 0x02 return 2 bytes */
-    //% blockId="indenvgetTVOC" block="IndEnv get TVOC"
+    /* CJMCU-8118 CCS811 read VTOC addr 0x5A register 0x02 return 2 bytes */
+/*    //% blockId="indenvgetTVOC" block="IndEnv get TVOC"
     //% blockGap=2 weight=71
     export function indenvgetTVOC(): number {
 	    pins.setPull(DigitalPin.P19, PinPullMode.PullUp)
@@ -144,8 +144,7 @@ namespace indenvsensor {
 	    basic.pause(200)
 	    pins.i2cWriteNumber(90,2,NumberFormat.UInt8LE,false)
 	    basic.pause(200)
-/*	    return pins.i2cReadNumber(90, NumberFormat.UInt32BE, false) % 65536 */
-	    return pins.i2cReadNumber(90, NumberFormat.UInt32BE, false)
+	    return pins.i2cReadNumber(90, NumberFormat.UInt32BE, false) % 65536
     }
-
+*/
 }
