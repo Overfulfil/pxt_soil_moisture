@@ -144,7 +144,7 @@ namespace indenvsensor {
 	    basic.pause(200)
 	    pins.i2cWriteNumber(90,2,NumberFormat.UInt8LE,false)
 	    basic.pause(200)
-	    return pins.i2cReadNumber(90, NumberFormat.UInt32BE, false)
+	    return (pins.i2cReadNumber(90, NumberFormat.UInt32BE, false) % 65536)
     }
 
 }
