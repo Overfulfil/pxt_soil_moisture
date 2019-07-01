@@ -132,9 +132,9 @@ namespace indenvsensor {
 	    basic.pause(200)
 	    pins.i2cWriteNumber(90,2,NumberFormat.UInt8LE,false)
 	    basic.pause(200)
-	    Let eCO2 = pins.i2cReadNumber(90, NumberFormat.UInt16BE, false)
+	    Let ECO2 = pins.i2cReadNumber(90, NumberFormat.UInt16BE, false)
 	    basic.pause(200)
-	    return eCO2
+	    return ECO2
     }
 
     /* CJMCU-8118 CCS811 read eCO2 addr 0x5A register 0x02 return 2 bytes */
