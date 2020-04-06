@@ -8,7 +8,7 @@ namespace indenvsensor {
    	pins.i2cWriteNumber(81,0,NumberFormat.Int8LE,false)
 	return (4096 - pins.i2cReadNumber(81, NumberFormat.UInt16BE, false))    
     }
-	
+/*	
     //% blockId="soilTooDry" block="Soil too dry?"
     //% blockGap=2 weight=79
     export function soilTooDry(): boolean {
@@ -28,5 +28,5 @@ namespace indenvsensor {
 	}
 	return false
     }
-
+*/
 }
