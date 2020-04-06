@@ -13,16 +13,20 @@ namespace indenvsensor {
     //% blockGap=2 weight=79
     export function SoilTooDry(): boolean {
    	pins.i2cWriteNumber(81,0,NumberFormat.Int8LE,false)
-	if ((4096 - pins.i2cReadNumber(81, NumberFormat.UInt16BE, false)) < 100) 
+	if ((4096 - pins.i2cReadNumber(81, NumberFormat.UInt16BE, false)) < 100) {
 		return ture    
+	}
+	return false
     }
 
     //% blockId="SoilTooWet" block="Soil too Wet?"
     //% blockGap=2 weight=79
     export function SoilTooWet(): boolean {
    	pins.i2cWriteNumber(81,0,NumberFormat.Int8LE,false)
-	if ((4096 - pins.i2cReadNumber(81, NumberFormat.UInt16BE, false)) > 3000) 
+	if ((4096 - pins.i2cReadNumber(81, NumberFormat.UInt16BE, false)) > 3000) {
 		return ture    
+	}
+	return false
     }
 
 }
