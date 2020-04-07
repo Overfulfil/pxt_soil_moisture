@@ -1,6 +1,6 @@
 # IndEnvSensor
 
-這是自製的 micro:bit 泥土濕度 積木
+這是自製的 micro:bit Indoor Environment Sensor 積木
 
 ## License
 
@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-indenvsensorblock=github.com/Overfulfil/pxt_soil_moisture
+indenvsensorblock=github.com/henrycheng/pxt-indenvsensorblock
 ```
