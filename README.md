@@ -1,6 +1,6 @@
 # IndEnvSensor
 
-這是自製的 micro:bit Indoor Environment Sensor 積木
+這是自製的 micro:bit Soi Moisture Sensor 積木
 
 ## License
 
