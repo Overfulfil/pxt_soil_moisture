@@ -29,4 +29,13 @@ namespace indenvsensor {
 	return false
     }
 
+    //% blockId="irrigate" block="Irrigate %io"
+    //% io.defl=Pin.P0
+    //% blockGap=2 weight=79
+    export function irrigate(io:AnalogPin) {	
+        pins.servoWritePin(io, 0)
+        basic.pause(1000)
+        pins.servoWritePin(io, 90)
+        basic.pause(500)
+    }
 }
